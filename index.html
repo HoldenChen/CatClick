@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+<div id="cat_list"></div>
+<div id = "cat_container">
+</div>
+<div id="admin_view">
+    <div><button id="admin_btn" onclick="view_admin_manager.showadmin()">admin</button></div>
+    <form id="updatecatinfoform" onsubmit="octopus.updatecatinfo()">
+        Cat_Name : <input id="input_catname" type="text" name="fname"> <br>
+        Img_Url : <input id = "input_imgurl" type="text" name="imgurl"><br>
+        #Clicks : <input id = "input_clicks" type="number" name="clicked_times"><br>
+        <input type="button" value="Cancel" onclick="view_admin_manager.hideadmin()" >
+        <input type="button" value="Confirm" onclick="octopus.updatecatinfo()">
+    </form>
+</div>
+
+<script src="js/app.js"></script>
+
+
+
+
+
+
+</body>
+</html>
